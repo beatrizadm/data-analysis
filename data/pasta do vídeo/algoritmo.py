@@ -2,11 +2,12 @@ import random
 
 def loremIpsum(len):
 
-    string = "i"
+    string = ""
     letras = "abcdefghijklmnopqrstuvwxyz"
+    n_letras = 26
 
     while (len > 0):
-        num = random.randit(letras.len())
+        num = random.randint(0, n_letras)
         string += letras[num]
         len -= 1
 
